@@ -24,7 +24,11 @@ var styles = {
     paddingTop: '5px',
     fontFamily: 'Marion',
     border: '0px',
-    outline: 'none'
+    outline: 'none',
+
+    ':hover': {
+      background: color('#0074d9').lighten(0.2).hexString()
+    }
   }
 }
 
