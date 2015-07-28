@@ -1,0 +1,87 @@
+.loginBackground {
+  background-image: url(waiter.jpg);
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+}
+
+.loginFormText {
+  font-family: Arabic Typesetting;
+  line-height: 1.5;
+}
+
+
+.loginFormStyle {
+  display: flex;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.title {
+  fontWeight: 200;
+  font-size: 75px;
+  text-align: center;
+  color: rgba(237, 237, 237, 0.89);
+  cursor: default;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.titleR {
+  fontWeight: 200;
+  font-size: 75px;
+  text-align: center;
+  color: rgba(132, 175, 224, 1);
+  cursor: default;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.loginModuleStyle {
+  display: flex;
+  background: rgba(0,0,0,0.75);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 180px;
+}
+
+.loginButton {
+  margin-top: 10px;
+  border-radius: 14px;
+  width: 100%;
+  background-color: rgba(132, 175, 224, 1);
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  padding-top: 5px;
+  font-family: Marion;
+  border: 0px;
+  outline: none;
+}
+
+.firstBox {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 24px;
+  padding-left: 5px;
+  padding: 13px 0px 5px 5px;
+  font-family: Marion;
+  outline: none;
+}
+
+.lastBox {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 24px;
+  padding-left: 5px;
+  padding: 13px 0px 5px 5px;
+  font-family: Marion;
+  outline: none;
+}
