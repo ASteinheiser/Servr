@@ -3,7 +3,7 @@ import Radium from 'radium';
 
 var LoginFormInput = React.createClass(Radium.wrap({
   propTypes: {
-    class: React.PropTypes.string.isRequired
+    class: React.PropTypes.string.isRequired,
     type: React.PropTypes.string.isRequired,
     placeholder: React.PropTypes.string,
     name: React.PropTypes.string.isRequired,
@@ -13,10 +13,11 @@ var LoginFormInput = React.createClass(Radium.wrap({
   },
   render: function() {
     return (
-      <input style={[{this.props.class}]} type={this.props.type} placeholder={this.props.placeholder} name={this.props.name}/>
+      <input style={[this.props.class]} type={this.props.type} placeholder={this.props.placeholder} name={this.props.name}/>
     );
   }
 }));
+
 var styles = {
   firstBox: {
     borderTopLeftRadius: '5px',
@@ -26,8 +27,8 @@ var styles = {
     padding: '13px 0px 5px 5px',
     fontFamily: 'Marion',
     outline: 'none'
-  }
-  lastBox {
+  },
+  lastBox: {
     borderBottomLeftRadius: '5px',
     borderBoTomRightRadius: '5px',
     fontSize: '24px',
@@ -35,8 +36,8 @@ var styles = {
     padding: '13px 0px 5px 5px',
     fontFamily: 'Marion',
     outline: 'none'
-  }
-  innerBox {
+  },
+  innerBox: {
     borderRadius: '1px',
     fontSize: '24px',
     paddingLeft: '5px',

@@ -13,23 +13,23 @@ var LoginTitle = React.createClass(Radium.wrap({
 
 var styles = {
   center: {
-    text-align: center;
+    textAlign: 'center'
   },
   title: {
-    fontWeight: 200;
-    font-size: 75px;
-    color: rgba(237, 237, 237, 0.89);
-    cursor: default;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    fontWeight: 200,
+    fontSize: '75px',
+    color: 'rgba(237, 237, 237, 0.89)',
+    cursor: 'default',
+    marginTop: '20px',
+    marginBottom: '10px'
   },
   titleR: {
-    fontWeight: 200;
-    font-size: 75px;
-    color: rgba(132, 175, 224, 1);
-    cursor: default;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    fontWeight: 200,
+    fontSize: '75px',
+    color: 'rgba(132, 175, 224, 1)',
+    cursor: 'default',
+    marginTop: '20px',
+    marginBottom: '10px'
   }
 }
 

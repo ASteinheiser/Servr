@@ -12,8 +12,8 @@ var LoginForm = React.createClass(Radium.wrap({
         <div>
           <LoginTitle/>
           <FormField>
-            <FormInput class="styles.firstBox" name="Email Address" type="email" placeholder="Email Address"/>
-            <FormInput class="styles.lastBox" name="Password" type="password" placeholder="Password"/>
+            <FormInput class='styles.firstBox' name='Email Address' type='email' placeholder='Email Address'/>
+            <FormInput class='styles.lastBox' name='Password' type='password' placeholder='Password'/>
           </FormField>
           <LoginButton/>
         </div>
