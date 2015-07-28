@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginFormInput = React.createClass(Radium.wrap{
+var LoginFormInput = React.createClass(Radium.wrap({
   propTypes: {
     class: React.PropTypes.string.isRequired
     type: React.PropTypes.string.isRequired,
@@ -16,7 +16,7 @@ var LoginFormInput = React.createClass(Radium.wrap{
       <input style={[{this.props.class}]} type={this.props.type} placeholder={this.props.placeholder} name={this.props.name}/>
     );
   }
-});
+}));
 var styles = {
   firstBox: {
     borderTopLeftRadius: '5px',

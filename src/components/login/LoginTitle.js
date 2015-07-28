@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginTitle = React.createClass(Radium.wrap{
+var LoginTitle = React.createClass(Radium.wrap({
   render: function() {
     return (
       <div style={[styles.center]}>
@@ -9,7 +9,7 @@ var LoginTitle = React.createClass(Radium.wrap{
       </div>
     );
   }
-});
+}));
 
 var styles = {
   center: {

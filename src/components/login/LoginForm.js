@@ -5,7 +5,7 @@ import LoginButton from './LoginButton';
 import LoginFormField from './LoginFormField';
 import LoginFormInput from './LoginFormInput';
 
-var LoginForm = React.createClass(Radium.wrap{
+var LoginForm = React.createClass(Radium.wrap({
   render: function() {
     return (
       <div style={[styles.loginFormStyle]}>
@@ -20,7 +20,7 @@ var LoginForm = React.createClass(Radium.wrap{
       </div>
     );
   }
-});
+}));
 
 var styles = {
   loginFormStyle: {

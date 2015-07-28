@@ -1,13 +1,13 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginFormField = React.createClass(Radium.wrap{
+var LoginFormField = React.createClass(Radium.wrap({
   render: function() {
     return (
       <div style={[styles.loginFormText]}>{this.props.children}</div>
     );
   }
-});
+}));
 
 var styles = {
   loginFormText: {

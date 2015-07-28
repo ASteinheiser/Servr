@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 import LoginForm from './LoginForm';
 
-var LoginModule = React.createClass(Radium.wrap{
+var LoginModule = React.createClass(Radium.wrap({
   render: function() {
     return (
       <div style={[styles.loginModuleStyle]}>
@@ -10,7 +10,7 @@ var LoginModule = React.createClass(Radium.wrap{
       </div>
     );
   }
-});
+}));
 
 var styles = {
   loginModuleStyle: {
