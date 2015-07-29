@@ -1,20 +1,20 @@
 import React from 'react';
 import Radium from 'radium';
 
-import LoginForm from './login-form';
+import SignupForm from './signup-form';
 
-var LoginPage = React.createClass({
+var SignupPage = React.createClass({
   render: function() {
     return (
-      <div style={[styles.loginBackground]}>
-        <div style={[styles.loginBoxOpaque]}>
+      <div style={[styles.signupBackground]}>
+        <div style={[styles.signupBoxOpaque]}>
 
           <h1 style={[styles.servrTitle]}>
             <font>Serv</font>
             <font style={[styles.servrTitleR]}>r</font>
           </h1>
 
-          <LoginForm />
+          <SignupForm />
 
         </div>
       </div>
@@ -22,10 +22,10 @@ var LoginPage = React.createClass({
   }
 });
 
-LoginPage = Radium(LoginPage);
+SignupPage = Radium(SignupPage);
 
 var styles = {
-  loginBackground: {
+  signupBackground: {
     backgroundImage: 'url(src/images/waiter.jpg)',
     backgroundSize: 'cover',
     display: 'flex',
@@ -35,11 +35,11 @@ var styles = {
     bottom: 0,
     right: 0,
   },
-  loginBoxOpaque: {
+  signupBoxOpaque: {
     padding: '30px',
     backgroundColor: 'rgba(10, 10, 10, 0.9)',
     WebkitBorderRadius: '5px',
-    margin: '168px auto auto auto',
+    margin: '148px auto auto auto',
   },
   servrTitle: {
     fontSize: '70px',
@@ -55,4 +55,4 @@ var styles = {
   },
 }
 
-export default LoginPage;
+export default SignupPage;

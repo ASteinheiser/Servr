@@ -33,11 +33,12 @@ var styles = {
     borderRadius: '2px',
     border: '2px solid rgb(72, 124, 236)',
     outline: 'none',
-    fontWeight: 'lighter',
+    fontWeight: 'normal',
     fontFamily: 'sans-serif',
     transitionDuration: '0.3s',
-    transitionTimingFunction: 'ease-out',
+    transitionTimingFunction: 'ease',
     cursor: 'pointer',
+    WebkitFontSmoothing: 'antialiased',
 
     ':hover': {
       color: 'white',

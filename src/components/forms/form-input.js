@@ -35,6 +35,7 @@ var styles = {
     outline: 'none',
     backgroundColor: 'rgba(43, 43, 43, 0)',
     boxShadow: '-7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130)',
+    WebkitFontSmoothing: 'antialiased',
 
     ':focus': {
       boxShadow: '-7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215)'

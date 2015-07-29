@@ -36,8 +36,9 @@ var styles = {
     fontWeight: 'lighter',
     fontFamily: 'sans-serif',
     transitionDuration: '0.3s',
-    transitionTimingFunction: 'ease-out',
+    transitionTimingFunction: 'ease',
     cursor: 'pointer',
+    WebkitFontSmoothing: 'antialiased',
 
     ':hover': {
       backgroundColor: 'rgb(50, 100, 205)',

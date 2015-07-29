@@ -6,11 +6,12 @@ import FormInput from '../forms/form-input';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
-var LoginForm = React.createClass({
+var SignupForm = React.createClass({
   getInitialState: function() {
     return {
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: '',
     }
   },
 
@@ -45,8 +46,16 @@ var LoginForm = React.createClass({
               value={this.state.password}/>
           </FormField>
 
-          <PrimaryButton name='loginButton' type='submit' text='Login'/>
-          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+          <FormField>
+            <FormInput
+              name='confirmPassword'
+              type='password'
+              placeholder='Confirm Password'
+              value={this.state.password}/>
+          </FormField>
+
+          <PrimaryButton name='signupButton' type='submit' text='Sign up'/>
+          <SecondaryButton name='loginButton' type='submit' text='Login'/>
 
         </form>
       </div>
@@ -54,6 +63,6 @@ var LoginForm = React.createClass({
   }
 });
 
-LoginForm = Radium(LoginForm);
+SignupForm = Radium(SignupForm);
 
-export default LoginForm;
+export default SignupForm;
