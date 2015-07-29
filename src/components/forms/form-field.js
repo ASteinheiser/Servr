@@ -4,11 +4,18 @@ import Radium from 'radium';
 var LoginFormField = React.createClass({
   render: function() {
     return (
-      <div>{this.props.children}</div>
+      <div style={[styles.formField]}>{this.props.children}</div>
     );
   }
 });
 
 LoginFormField = Radium(LoginFormField);
+
+var styles = {
+  formField: {
+    flexDirection: 'row',
+    display: 'flex',
+  }
+}
 
 export default LoginFormField;

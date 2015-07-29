@@ -3,9 +3,10 @@ import Radium from 'radium';
 
 import FormField from '../forms/form-field';
 import FormInput from '../forms/form-input';
+import PrimaryButton from '../buttons/primary-button';
+import SecondaryButton from '../buttons/secondary-button';
 
 var LoginForm = React.createClass({
-
   getInitialState: function() {
     return {
       email: '',
@@ -14,8 +15,8 @@ var LoginForm = React.createClass({
   },
 
   handleSubmit: function(e) {
+    console.log('Submitting ',this.state);
     e.preventDefault();
-    console.log('Bang!', this.state);
   },
 
   handleChange: function (e) {
@@ -35,8 +36,7 @@ var LoginForm = React.createClass({
               placeholder='Email Address'
               value={this.state.email}/>
           </FormField>
-        </form>
-        <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
+
           <FormField>
             <FormInput
               name='password'
@@ -44,7 +44,10 @@ var LoginForm = React.createClass({
               placeholder='Password'
               value={this.state.password}/>
           </FormField>
-          <button style={[styles.submitButton]} type="submit">Login!</button>
+
+          <PrimaryButton name='loginButton' type='submit' text='Login'/>
+          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+
         </form>
       </div>
     );
@@ -52,21 +55,5 @@ var LoginForm = React.createClass({
 });
 
 LoginForm = Radium(LoginForm);
-
-var styles= {
-  submitButton: {
-    width: '100%',
-    fontSize: '20px',
-    padding: '7px',
-    border: 'none',
-    borderRadius: '2px',
-    backgroundColor: 'rgba(43, 43, 43, 0)',
-    outline: 'none',
-
-    ':hover': {
-      backgroundColor: 'rgba(113, 113, 113, 1)',
-    },
-  }
-}
 
 export default LoginForm;

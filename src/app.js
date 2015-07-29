@@ -1,7 +1,6 @@
 import React from 'react';
 import Radium from 'radium';
 
-import Comments from './components/comments/comment-list';
-import LoginPage from './components/login/LoginPage';
+import LoginPage from './components/login/login-page';
 
 React.render(<LoginPage />, document.getElementById('app'));
