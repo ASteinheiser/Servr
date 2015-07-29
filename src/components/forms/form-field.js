@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginFormField = React.createClass({
+var FormField = React.createClass({
   render: function() {
     return (
       <div style={[styles.formField]}>{this.props.children}</div>
@@ -9,7 +9,7 @@ var LoginFormField = React.createClass({
   }
 });
 
-LoginFormField = Radium(LoginFormField);
+FormField = Radium(FormField);
 
 var styles = {
   formField: {
@@ -18,4 +18,4 @@ var styles = {
   }
 }
 
-export default LoginFormField;
+export default FormField;

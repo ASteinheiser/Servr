@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-var LoginFormInput = React.createClass({
+var FormInput = React.createClass({
   propTypes: {
     type: React.PropTypes.string.isRequired,
     placeholder: React.PropTypes.string,
@@ -21,7 +21,7 @@ var LoginFormInput = React.createClass({
   }
 });
 
-LoginFormInput = Radium(LoginFormInput);
+FormInput = Radium(FormInput);
 
 var styles = {
   inputStyle: {
@@ -42,4 +42,4 @@ var styles = {
   }
 }
 
-export default LoginFormInput;
+export default FormInput;
