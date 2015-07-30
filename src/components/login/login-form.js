@@ -15,8 +15,8 @@ var LoginForm = React.createClass({
   },
 
   handleSubmit: function(e) {
-    console.log('Submitting ',this.state);
     e.preventDefault();
+    console.log('Submitting ',this.state);
   },
 
   handleChange: function (e) {
@@ -46,8 +46,8 @@ var LoginForm = React.createClass({
           </FormField>
 
           <PrimaryButton name='loginButton' type='submit' text='Login'/>
-          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
 
+          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
         </form>
       </div>
     );

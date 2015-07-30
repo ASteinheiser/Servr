@@ -35,7 +35,7 @@ var styles = {
     outline: 'none',
     fontWeight: 'lighter',
     fontFamily: 'sans-serif',
-    transitionDuration: '0.3s',
+    transitionDuration: '0.2s',
     transitionTimingFunction: 'ease',
     cursor: 'pointer',
     WebkitFontSmoothing: 'antialiased',
@@ -43,6 +43,10 @@ var styles = {
     ':hover': {
       backgroundColor: 'rgb(50, 100, 205)',
     },
+
+    ':active': {
+      backgroundColor: 'rgb(72, 124, 236)',
+    }
   }
 }
 
