@@ -44,6 +44,7 @@ var styles = {
   servrTitle: {
     fontSize: '70px',
     fontWeight: 'lighter',
+    fontFamily: 'sans-serif',
     color: 'rgb(215, 215, 215)',
     textAlign: 'center',
     margin: '-20px 0px 20px 0px',
