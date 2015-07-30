@@ -1,10 +1,17 @@
 import React from 'react';
 import Radium from 'radium';
+import page from 'page';
 
 import FormField from '../forms/form-field';
 import FormInput from '../forms/form-input';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
+
+var navigate = function (url) {
+  return function () {
+    page(url);
+  }
+};
 
 var LoginForm = React.createClass({
   getInitialState: function() {
@@ -46,9 +53,9 @@ var LoginForm = React.createClass({
           </FormField>
 
           <PrimaryButton name='loginButton' type='submit' text='Login'/>
-
-          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
         </form>
+
+        <SecondaryButton onClick={navigate('/signup')} name='signupButton' type='submit' text='Sign up'/>
       </div>
     );
   }
