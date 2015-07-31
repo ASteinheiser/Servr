@@ -1,5 +1,7 @@
 import _ from "lodash";
 import React from "react";
+import Firebase from "firebase";
+import ReactFire from 'reactfire';
 
 import CommentListItem from "./comment-list-item";
 import CommentForm from "./comment-form";
@@ -9,13 +11,21 @@ var CommentList = React.createClass({
 
   getInitialState: function() {
     return {
-      comments: []
+      items: []
     }
   },
 
   componentWillMount: function() {
     var ref = new Firebase("https://sizzling-torch-3506.firebaseio.com/comments");
-    this.bindAsArray(ref, "comments");
+
+    this.firebaseRef.on("child_added", function(dataSnapshot) {
+      this.items.push(dataSnapshot.val());
+      this.setState({
+        items: this.items
+      });
+    }.bind(this));
+
+    this.firebaseRef.off();
   },
 
   render: function() {

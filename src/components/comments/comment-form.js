@@ -9,18 +9,23 @@ var CommentForm = React.createClass({
   },
 
   handleSubmit: function(e) {
-
     e.preventDefault();
+    this.firebaseRef.push({
+      text: this.state.text
+    });
+    this.setState({text: ''});
   },
 
-  handleChange: function() {
-
+  handleChange: function(e) {
+    var change = {};
+    change[e.target.name] = e.target.value;
+    this.setState(change);
   },
 
   render: function() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <textarea value={this.state.text} onChange={this.handleChange}/>
+        <textarea name='text' value={this.state.text} onChange={this.handleChange}/>
         <div>
           <button>Add Comment</button>
         </div>
