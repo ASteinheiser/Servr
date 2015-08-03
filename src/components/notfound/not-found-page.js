@@ -17,7 +17,7 @@ NotFoundPage = Radium(NotFoundPage);
 
 var styles = {
   NotFoundBackground: {
-    color: 'white',
+    backgroundColor: 'rgb(210,210,210)',
     backgroundSize: 'cover',
     display: 'flex',
     position: 'absolute',

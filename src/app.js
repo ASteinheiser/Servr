@@ -45,7 +45,7 @@ var LoginRoute = React.createClass({
   }
 });
 
-var NotFoundRoute = React.createClass({
+var NotFoundRoutes = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
   },
@@ -55,12 +55,11 @@ var NotFoundRoute = React.createClass({
   }
 });
 
-
 var routes = (
-  <Route path="/" handler={App}>
-    <Route handler={LoginRoute}/>
-    <Route handler={NotFoundRoute}/>
-    <Route name="signup" handler={SignupRoute}/>
+  <Route path='/' handler={App}>
+    <Route path='login' handler={LoginRoute}/>
+    <Route path='signup' handler={SignupRoute}/>
+    <Route handler={NotFoundRoutes}/>
   </Route>
 );
 
