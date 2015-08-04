@@ -6,7 +6,7 @@ import LoginPage from './components/login/login-page';
 import SignupPage from './components/signup/signup-page';
 import HomePage from './components/home/home-page';
 import NewProfile from './components/newProfile/new-profile-page';
-import NotFoundPage from './components/notfound/not-found-page';
+import NotFoundPage from './components/notFound/not-found-page';
 
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
