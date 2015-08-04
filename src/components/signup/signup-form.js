@@ -57,7 +57,9 @@ var SignupForm = React.createClass({
           <PrimaryButton name='signupButton' type='submit' text='Sign up'/>
         </form>
 
-        <SecondaryButton name='loginButton' type='submit' text='Login'/>
+        <a href='/#/login'>
+          <SecondaryButton name='loginButton' type='submit' text='Login'/>
+        </a>
       </div>
     );
   }

@@ -44,11 +44,13 @@ var LoginForm = React.createClass({
               placeholder='Password'
               value={this.state.password}/>
           </FormField>
-
+          
           <PrimaryButton name='loginButton' type='submit' text='Login'/>
         </form>
 
-        <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+        <a href='/#/signup'>
+          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+        </a>
       </div>
     );
   }
