@@ -23,9 +23,9 @@ var App = React.createClass({
 var LoginRoute = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
+    var fetchMessage = function (err, message) {
       this.setState({ message: message });
-    })
+    }
   },
 
   render () {
@@ -36,9 +36,9 @@ var LoginRoute = React.createClass({
 var SignupRoute = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
+    var fetchMessage = function (err, message) {
       this.setState({ message: message });
-    })
+    }
   },
 
   render () {
@@ -49,9 +49,9 @@ var SignupRoute = React.createClass({
 var HomeRoute = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
+    var fetchMessage = function (err, message) {
       this.setState({ message: message });
-    })
+    }
   },
 
   render () {

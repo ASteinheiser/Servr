@@ -44,7 +44,7 @@ var LoginForm = React.createClass({
               placeholder='Password'
               value={this.state.password}/>
           </FormField>
-          
+
           <PrimaryButton name='loginButton' type='submit' text='Login'/>
         </form>
 
