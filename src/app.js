@@ -4,6 +4,7 @@ import Router from 'react-router';
 
 import LoginPage from './components/login/login-page';
 import SignupPage from './components/signup/signup-page';
+import HomePage from './components/home/home-page';
 import NotFoundPage from './components/notfound/not-found-page';
 
 var Route = Router.Route;
@@ -16,6 +17,19 @@ var App = React.createClass({
         <RouteHandler />
       </div>
     )
+  }
+});
+
+var LoginRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
+
+  render () {
+    return <LoginPage />;
   }
 });
 
@@ -32,7 +46,7 @@ var SignupRoute = React.createClass({
   }
 });
 
-var LoginRoute = React.createClass({
+var HomeRoute = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
     fetchMessage(id, function (err, message) {
@@ -41,7 +55,7 @@ var LoginRoute = React.createClass({
   },
 
   render () {
-    return <LoginPage />;
+    return <HomePage />;
   }
 });
 
@@ -59,7 +73,8 @@ var routes = (
   <Route path='/' handler={App}>
     <Route path='login' handler={LoginRoute}/>
     <Route path='signup' handler={SignupRoute}/>
-    <Route handler={NotFoundRoutes}/>
+    <Route path='home' handler={HomeRoute}/>
+    <Route path='*' handler={NotFoundRoutes}/>
   </Route>
 );
 
