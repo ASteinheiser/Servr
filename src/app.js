@@ -5,6 +5,7 @@ import Router from 'react-router';
 import LoginPage from './components/login/login-page';
 import SignupPage from './components/signup/signup-page';
 import HomePage from './components/home/home-page';
+import NewProfile from './components/newProfile/new-profile-page';
 import NotFoundPage from './components/notfound/not-found-page';
 
 var Route = Router.Route;
@@ -59,6 +60,19 @@ var HomeRoute = React.createClass({
   }
 });
 
+var NewProfileRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    var fetchMessage = function (err, message) {
+      this.setState({ message: message });
+    }
+  },
+
+  render () {
+    return <NewProfile />;
+  }
+});
+
 var NotFoundRoutes = React.createClass({
   componentDidMount: function () {
     var id = this.props.params.id;
@@ -74,6 +88,7 @@ var routes = (
     <Route path='login' handler={LoginRoute}/>
     <Route path='signup' handler={SignupRoute}/>
     <Route path='home' handler={HomeRoute}/>
+    <Route path='signup/profile' handler={NewProfileRoute}/>
     <Route path='*' handler={NotFoundRoutes}/>
   </Route>
 );
