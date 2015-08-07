@@ -7,11 +7,12 @@ var TopNav = React.createClass({
   render: function() {
     return (
       <div style={[styles.navTab]}>
-        <h1 style={[styles.servrTitle]}>
+        <div style={[styles.servrTitle]}>
           <font>Serv</font>
           <font style={[styles.servrTitleR]}>r</font>
-        </h1>
+        </div>
         <div style={[styles.topNavTabs]}>
+          <TopNavItem text='Dashboard'/>
           <TopNavItem text='Notifications'/>
           <TopNavItem text='Account'/>
           <TopNavItem text='Log out'/>
@@ -25,12 +26,12 @@ TopNav = Radium(TopNav);
 
 var styles = {
   servrTitle: {
-    fontSize: '60px',
-    fontWeight: 'lighter',
+    fontSize: '26px',
+    fontWeight: 'normal',
     fontFamily: 'sans-serif',
     color: 'rgb(215, 215, 215)',
     textAlign: 'left',
-    margin: '4px 0px 0px 20px',
+    margin: 'auto 0px auto 15px',
     cursor: 'default',
     WebkitFontSmoothing: 'antialiased',
   },
@@ -39,8 +40,8 @@ var styles = {
   },
   navTab: {
     display: 'flex',
-    backgroundColor: 'rgb(15, 0, 150)',
-    height: '10%',
+    backgroundColor: 'rgb(36, 41, 46)',
+    height: '46',
     width: '100%',
   },
   topNavTabs: {
@@ -48,7 +49,7 @@ var styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
-    marginRight: '20px',
+    marginRight: '10px',
   }
 }
 

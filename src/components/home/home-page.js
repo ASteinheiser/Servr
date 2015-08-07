@@ -6,7 +6,7 @@ import TopNav from '../navs/top-nav';
 var HomePage = React.createClass({
   render: function() {
     return (
-      <div style={[styles.NotFoundBackground]}>
+      <div style={[styles.homePageBackground]}>
         <TopNav/>
       </div>
     );
@@ -16,20 +16,7 @@ var HomePage = React.createClass({
 HomePage = Radium(HomePage);
 
 var styles = {
-  servrTitle: {
-    fontSize: '60px',
-    fontWeight: 'lighter',
-    fontFamily: 'sans-serif',
-    color: 'rgb(215, 215, 215)',
-    textAlign: 'center',
-    margin: '-15px 0px 15px 0px',
-    cursor: 'default',
-    WebkitFontSmoothing: 'antialiased',
-  },
-  servrTitleR: {
-    color: 'rgb(72, 124, 236)',
-  },
-  NotFoundBackground: {
+  homePageBackground: {
     backgroundColor: 'rgb(210,210,210)',
     backgroundSize: 'cover',
     display: 'flex',

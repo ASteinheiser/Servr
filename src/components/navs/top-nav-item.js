@@ -16,14 +16,18 @@ TopNavItem = Radium(TopNavItem);
 
 var styles = {
   navBarItem: {
-    color: 'rgb(175, 175, 175)',
+    color: 'rgb(215, 215, 215)',
     margin: '0 10px',
     cursor: 'pointer',
     fontWeight: 'normal',
     fontFamily: 'sans-serif',
+    fontSize: '16px',
     WebkitFontSmoothing: 'antialiased',
+    height: '46',
+    display: 'flex',
+    alignItems: 'center',
     ':hover': {
-      color: 'rgb(215, 215, 215)',
+      color: 'rgb(72, 124, 236)',
     }
   }
 }
