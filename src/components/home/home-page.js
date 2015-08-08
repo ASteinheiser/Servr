@@ -1,8 +1,8 @@
 import React from 'react';
 import Radium from 'radium';
 
-import TopNav from '../navs/top-nav';
-import MiddleSection from '../MiddleSection/middle-section';
+import TopNav from '../parts/navs/top-nav';
+import MiddleSection from '../parts/middleSection/middle-section';
 
 var HomePage = React.createClass({
   render () {
