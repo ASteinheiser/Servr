@@ -2,16 +2,22 @@ import React from 'react';
 import Radium from 'radium';
 
 var FormInput = React.createClass({
+
   propTypes: {
+
     type: React.PropTypes.string.isRequired,
     placeholder: React.PropTypes.string,
     name: React.PropTypes.string.isRequired,
   },
+
   defaultProps: {
+
     placeholder: ""
   },
-  render: function() {
+
+  render () {
     return (
+
       <input
         style={[styles.inputStyle]}
         type={this.props.type}
@@ -24,20 +30,25 @@ var FormInput = React.createClass({
 FormInput = Radium(FormInput);
 
 var styles = {
+
   inputStyle: {
+
     fontSize: '24px',
     fontWeight: 'lighter',
     fontFamily: 'sans-serif',
     color: 'rgb(215,215,215)',
+    WebkitFontSmoothing: 'antialiased',
+    backgroundColor: 'rgba(43, 43, 43, 0)',
+
     marginBottom: '15px',
     padding: '5px',
+
     border: 'none',
     outline: 'none',
-    backgroundColor: 'rgba(43, 43, 43, 0)',
     boxShadow: '-7px 9px 0px -7px rgb(130,130,130), 7px 9px 0px -7px rgb(130,130,130)',
-    WebkitFontSmoothing: 'antialiased',
 
     ':focus': {
+
       boxShadow: '-7px 9px 0px -7px rgb(215,215,215), 7px 9px 0px -7px rgb(215,215,215)'
     }
   }

@@ -5,11 +5,15 @@ import TopNav from '../navs/top-nav';
 import MiddleSection from '../MiddleSection/middle-section';
 
 var HomePage = React.createClass({
-  render: function() {
+  render () {
     return (
+
       <div style={[styles.homePageBackground]}>
+
         <TopNav/>
+
         <MiddleSection/>
+
       </div>
     );
   }
@@ -18,10 +22,13 @@ var HomePage = React.createClass({
 HomePage = Radium(HomePage);
 
 var styles = {
+
   homePageBackground: {
-    backgroundColor: 'rgb(230,230,230)',
-    backgroundSize: 'cover',
+
     display: 'flex',
+    backgroundColor: 'rgb(230,230,230)',
+
+    backgroundSize: 'cover',
     position: 'absolute',
     top: 0,
     left: 0,

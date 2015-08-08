@@ -4,8 +4,9 @@ import Radium from 'radium';
 import SignupForm from './signup-form';
 
 var SignupPage = React.createClass({
-  render: function() {
+  render () {
     return (
+
       <div style={[styles.signupBackground]}>
         <div style={[styles.signupBoxOpaque]}>
 
@@ -25,10 +26,13 @@ var SignupPage = React.createClass({
 SignupPage = Radium(SignupPage);
 
 var styles = {
+
   signupBackground: {
-    backgroundImage: 'url(src/images/waiter.jpg)',
-    backgroundSize: 'cover',
+
     display: 'flex',
+    backgroundImage: 'url(src/images/waiter.jpg)',
+
+    backgroundSize: 'cover',
     position: 'absolute',
     top: 0,
     left: 0,
@@ -36,22 +40,29 @@ var styles = {
     right: 0,
   },
   signupBoxOpaque: {
-    padding: '30px',
+
     backgroundColor: 'rgba(10, 10, 10, 0.9)',
-    WebkitBorderRadius: '5px',
+
+    padding: '30px',
     margin: '148px auto auto auto',
+
+    WebkitBorderRadius: '5px',
   },
   servrTitle: {
+
     fontSize: '60px',
     fontWeight: 'lighter',
     fontFamily: 'sans-serif',
     color: 'rgb(215, 215, 215)',
+
     textAlign: 'center',
     margin: '-15px 0px 15px 0px',
-    cursor: 'default',
     WebkitFontSmoothing: 'antialiased',
+
+    cursor: 'default',
   },
   servrTitleR: {
+
     color: 'rgb(72, 124, 236)',
   },
 }

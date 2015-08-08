@@ -4,15 +4,13 @@ import Radium from 'radium';
 import TopNavItem from './top-nav-item'
 
 var TopNav = React.createClass({
-  render: function() {
+  render () {
     return (
 
       <div style={[styles.navTab]}>
 
         <div style={[styles.servrTitle]}>
-          <font>
-            Serv
-          </font>
+          <font>Serv</font>
           <font style={[styles.servrTitleR]}>r</font>
         </div>
 
@@ -57,9 +55,11 @@ var styles = {
     height: '46px',
   },
   topNavTabs: {
+
     flex: 1,
     display: 'flex',
     alignItems: 'center',
+
     justifyContent: 'flex-end',
     marginRight: '10px',
   }

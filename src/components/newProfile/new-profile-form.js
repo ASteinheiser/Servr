@@ -7,27 +7,34 @@ import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
 var NewProfileForm = React.createClass({
+
   getInitialState: function() {
     return {
+
       fullName: '',
     }
   },
 
   handleSubmit: function(e) {
+
     console.log('Submitting ',this.state);
     e.preventDefault();
   },
 
   handleChange: function (e) {
+
     var change = {};
     change[e.target.name] = e.target.value;
+
     this.setState(change);
   },
 
-  render: function() {
+  render () {
     return (
+
       <div>
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
+
           <FormField>
             <FormInput
               name='fullName'
@@ -37,11 +44,13 @@ var NewProfileForm = React.createClass({
           </FormField>
 
           <PrimaryButton name='createProfile' type='submit' text='Create Profile'/>
+
         </form>
 
         <a href='/#/signup'>
           <SecondaryButton name='cancel' type='submit' text='Cancel'/>
         </a>
+
       </div>
     );
   }

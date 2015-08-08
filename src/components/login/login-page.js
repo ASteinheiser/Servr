@@ -4,8 +4,9 @@ import Radium from 'radium';
 import LoginForm from './login-form';
 
 var LoginPage = React.createClass({
-  render: function() {
+  render () {
     return (
+
       <div style={[styles.loginBackground]}>
         <div style={[styles.loginBoxOpaque]}>
 
@@ -25,10 +26,13 @@ var LoginPage = React.createClass({
 LoginPage = Radium(LoginPage);
 
 var styles = {
+
   loginBackground: {
-    backgroundImage: 'url(src/images/waiter.jpg)',
-    backgroundSize: 'cover',
+
     display: 'flex',
+    backgroundImage: 'url(src/images/waiter.jpg)',
+
+    backgroundSize: 'cover',
     position: 'absolute',
     top: 0,
     left: 0,
@@ -36,22 +40,28 @@ var styles = {
     right: 0,
   },
   loginBoxOpaque: {
-    padding: '30px',
+
     backgroundColor: 'rgba(10, 10, 10, 0.9)',
+
+    padding: '30px',
     WebkitBorderRadius: '5px',
     margin: '168px auto auto auto',
   },
   servrTitle: {
+
     fontSize: '60px',
     fontWeight: 'lighter',
     fontFamily: 'sans-serif',
     color: 'rgb(215, 215, 215)',
+    WebkitFontSmoothing: 'antialiased',
+
     textAlign: 'center',
     margin: '-15px 0px 15px 0px',
+
     cursor: 'default',
-    WebkitFontSmoothing: 'antialiased',
   },
   servrTitleR: {
+
     color: 'rgb(72, 124, 236)',
   },
 }

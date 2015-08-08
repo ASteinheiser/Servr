@@ -2,17 +2,17 @@ import React from 'react';
 import Radium from 'radium';
 
 var SecondaryButton = React.createClass({
+
   propTypes: {
+
     type: React.PropTypes.string.isRequired,
     text: React.PropTypes.string.isRequired,
-    name: React.PropTypes.string,
-  },
-  defaultProps: {
-    name: '',
+    name: React.PropTypes.string.isRequired,
   },
 
-  render: function() {
+  render () {
     return (
+
       <button style={[styles.secondaryButton]} type={this.props.type} name={this.props.name}>
         {this.props.text}
       </button>
@@ -23,31 +23,41 @@ var SecondaryButton = React.createClass({
 SecondaryButton = Radium(SecondaryButton);
 
 var styles = {
+
   secondaryButton: {
-    backgroundColor: 'transparent',
-    color: 'rgb(72, 124, 236)',
-    width: '100%',
+
     fontSize: '16px',
+    fontWeight: 'normal',
+    fontFamily: 'sans-serif',
+    WebkitFontSmoothing: 'antialiased',
+    color: 'rgb(72, 124, 236)',
+    backgroundColor: 'transparent',
+
+    width: '100%',
     padding: '7px',
     marginTop: '10px',
+
     borderRadius: '2px',
     border: '2px solid rgb(72, 124, 236)',
     outline: 'none',
-    fontWeight: 'normal',
-    fontFamily: 'sans-serif',
+
     transitionDuration: '0.2s',
     transitionTimingFunction: 'ease',
+
     cursor: 'pointer',
-    WebkitFontSmoothing: 'antialiased',
 
     ':hover': {
+
       color: 'white',
       backgroundColor: 'rgb(50, 100, 205)',
+
       border: '2px solid rgb(50, 100, 205)',
     },
 
     ':active': {
+
       backgroundColor: 'rgb(72, 124, 236)',
+
       border: '2px solid rgb(72, 124, 236)',
     }
   }

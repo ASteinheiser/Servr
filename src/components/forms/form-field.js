@@ -2,8 +2,9 @@ import React from 'react';
 import Radium from 'radium';
 
 var FormField = React.createClass({
-  render: function() {
+  render () {
     return (
+
       <div style={[styles.formField]}>{this.props.children}</div>
     );
   }
@@ -12,7 +13,9 @@ var FormField = React.createClass({
 FormField = Radium(FormField);
 
 var styles = {
+
   formField: {
+
     flexDirection: 'row',
     display: 'flex',
   }

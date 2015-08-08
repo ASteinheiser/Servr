@@ -7,8 +7,10 @@ import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
 var SignupForm = React.createClass({
+
   getInitialState: function() {
     return {
+
       email: '',
       password: '',
       confirmPassword: '',
@@ -16,20 +18,26 @@ var SignupForm = React.createClass({
   },
 
   handleSubmit: function(e) {
+
     console.log('Submitting ',this.state);
     e.preventDefault();
   },
 
   handleChange: function (e) {
+
     var change = {};
     change[e.target.name] = e.target.value;
+
     this.setState(change);
   },
 
-  render: function() {
+  render () {
     return (
+
       <div>
+
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
+
           <FormField>
             <FormInput
               name='email'
@@ -55,11 +63,13 @@ var SignupForm = React.createClass({
           </FormField>
 
           <PrimaryButton name='signupButton' type='submit' text='Sign up'/>
+
         </form>
 
         <a href='/#/login'>
           <SecondaryButton name='loginButton' type='submit' text='Login'/>
         </a>
+
       </div>
     );
   }

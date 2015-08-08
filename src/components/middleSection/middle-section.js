@@ -2,9 +2,10 @@ import React from 'react';
 import Radium from 'radium';
 
 var MiddleSecion = React.createClass({
-  render: function() {
+  render () {
     return (
-      <div/>
+
+      <div style={[styles.middleSection]}/>
     );
   }
 });
@@ -12,6 +13,11 @@ var MiddleSecion = React.createClass({
 MiddleSecion = Radium(MiddleSecion);
 
 var styles = {
+
+  middleSection: {
+    
+    backgroundColor: 'red',
+  }
 }
 
 export default MiddleSecion;

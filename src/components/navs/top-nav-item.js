@@ -7,7 +7,7 @@ var TopNavItem = React.createClass({
     text: React.PropTypes.string.isRequired,
   },
 
-  render: function() {
+  render () {
     return (
 
       <a style={[styles.navBarItem]}>{this.props.text}</a>
