@@ -1,17 +1,19 @@
 import React from 'react';
 import Radium from 'radium';
 
+import BlankBackground from '../parts/pageBackgrounds/blank-background';
+
 var NotFoundPage = React.createClass({
   render () {
     return (
 
-      <div style={[styles.NotFoundBackground]}>
-        <div style={[styles.NotFoundText]}>
+      <BlankBackground>
+        <div style={[styles.notFoundText]}>
 
           <font>Page Not Found</font>
 
         </div>
-      </div>
+      </BlankBackground>
     );
   }
 });
@@ -20,20 +22,7 @@ NotFoundPage = Radium(NotFoundPage);
 
 var styles = {
 
-  NotFoundBackground: {
-
-    display: 'flex',
-    backgroundColor: 'rgb(210,210,210)',
-
-    backgroundSize: 'cover',
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
-  },
-
-  NotFoundText: {
+  notFoundText: {
 
     fontSize: '50px',
     fontFamily: 'sans-serif',
