@@ -19,6 +19,7 @@ var styles = {
   blankBackground: {
 
     display: 'flex',
+    flexDirection: 'column',
     backgroundColor: 'rgb(210,210,210)',
 
     backgroundSize: 'cover',
