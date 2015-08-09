@@ -1,6 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
+import NavTitle from './nav-title'
 import TopNavItem from './top-nav-item'
 
 var TopNav = React.createClass({
@@ -9,10 +10,7 @@ var TopNav = React.createClass({
 
       <div style={[styles.navTab]}>
 
-        <div style={[styles.servrTitle]}>
-          <font>Serv</font>
-          <font style={[styles.servrTitleR]}>r</font>
-        </div>
+        <NavTitle/>
 
         <div style={[styles.topNavTabs]}>
           <TopNavItem text='Dashboard'/>
@@ -30,26 +28,12 @@ TopNav = Radium(TopNav);
 
 var styles = {
 
-  servrTitle: {
-
-    fontSize: '26px',
-    fontWeight: 'normal',
-    fontFamily: 'sans-serif',
-    color: 'rgb(215, 215, 215)',
-    WebkitFontSmoothing: 'antialiased',
-
-    margin: 'auto 0px auto 15px',
-
-    cursor: 'default',
-  },
-  servrTitleR: {
-
-    color: 'rgb(72, 124, 236)',
-  },
   navTab: {
 
     backgroundColor: 'rgb(36, 41, 46)',
+    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
+    zIndex: 0,
     display: 'flex',
     width: '100%',
     height: '46px',
