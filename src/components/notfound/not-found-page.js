@@ -30,6 +30,8 @@ var styles = {
     color: 'rgb(75,75,75)',
 
     margin: 'auto auto 418px auto',
+
+    cursor: 'default',
   }
 }
 

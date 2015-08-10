@@ -5,7 +5,7 @@ import BlankBackground from '../parts/pageBackgrounds/blank-background';
 import TopNav from '../parts/navs/top-nav';
 import MiddleSection from '../parts/pageBackgrounds/middle-section';
 
-var HomePage = React.createClass({
+var LayoutShell = React.createClass({
   render () {
     return (
 
@@ -13,13 +13,15 @@ var HomePage = React.createClass({
 
         <TopNav/>
 
-        <MiddleSection/>
+        <MiddleSection>
+          {this.props.children}
+        </MiddleSection>
 
       </BlankBackground>
     );
   }
 });
 
-HomePage = Radium(HomePage);
+LayoutShell = Radium(LayoutShell);
 
-export default HomePage;
+export default LayoutShell;
