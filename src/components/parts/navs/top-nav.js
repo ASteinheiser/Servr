@@ -31,7 +31,7 @@ var styles = {
   navTab: {
 
     backgroundColor: 'rgb(36, 41, 46)',
-    WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
+    WebkitBoxShadow: '0px 1px 10px 0px rgba(0,0,0,0.75)',
 
     zIndex: 0,
     display: 'flex',

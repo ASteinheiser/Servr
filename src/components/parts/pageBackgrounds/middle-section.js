@@ -18,12 +18,13 @@ var styles = {
 
   middleSection: {
 
+    flex: 1,
     backgroundColor: 'rgb(230,230,230)',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
-    flex: 1,
-    width: '80%',
+    width: '100%',
     margin: '0 auto',
+    maxWidth: '900px',
 
     overflow: 'scroll',
   }
