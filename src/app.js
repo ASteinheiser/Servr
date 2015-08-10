@@ -12,6 +12,12 @@ var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 
 var App = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return (
       <div>
@@ -22,30 +28,60 @@ var App = React.createClass({
 });
 
 var LoginRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return <LoginPage />;
   }
 });
 
 var SignupRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return <SignupPage />;
   }
 });
 
 var NewProfileRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return <NewProfile />;
   }
 });
 
 var NotFoundRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return <NotFoundPage />;
   }
 });
 
 var DashboardRoute = React.createClass({
+  componentDidMount: function () {
+    var id = this.props.params.id;
+    fetchMessage(id, function (err, message) {
+      this.setState({ message: message });
+    })
+  },
   render () {
     return <DashboardPage />;
   }
