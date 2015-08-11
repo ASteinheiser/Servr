@@ -1,9 +1,9 @@
 import React from 'react';
 
-import WaiterBackground from '../components/parts/pageBackgrounds/waiter-background';
-import OpaqueBox from '../components/parts/pageBackgrounds/opaque-box';
-import FormTitle from '../components/parts/forms/form-title';
-import LoginForm from '../components/parts/forms/login-form';
+import WaiterBackground from '../components/pageBackgrounds/waiter-background';
+import OpaqueBox from '../components/pageBackgrounds/opaque-box';
+import FormTitle from '../components/forms/form-title';
+import LoginForm from '../components/forms/login-form';
 
 var LoginPage = React.createClass({
   render () {
