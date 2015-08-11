@@ -12,10 +12,10 @@ var TopNav = React.createClass({
         <NavTitle/>
 
         <div style={[styles.topNavTabs]}>
-          <TopNavItem text='Dashboard'/>
-          <TopNavItem text='Notifications'/>
-          <TopNavItem text='Account'/>
-          <TopNavItem text='Log out'/>
+          <TopNavItem href='/#/dashboard' text='Dashboard'/>
+          <TopNavItem href='/#/notifications' text='Notifications'/>
+          <TopNavItem href='/#/account' text='Account'/>
+          <TopNavItem href='/#/login' text='Log out'/>
         </div>
 
       </div>
@@ -34,7 +34,7 @@ var styles = {
     zIndex: 0,
     display: 'flex',
     width: '100%',
-    height: '46px',
+    minHeight: '46px',
   },
   topNavTabs: {
 

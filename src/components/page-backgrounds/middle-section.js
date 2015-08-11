@@ -17,7 +17,7 @@ var styles = {
   middleSection: {
 
     flex: 1,
-    backgroundColor: 'rgb(230,230,230)',
+    backgroundColor: 'rgb(240,240,240)',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
     width: '100%',

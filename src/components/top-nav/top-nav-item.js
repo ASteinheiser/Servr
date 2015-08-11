@@ -4,11 +4,12 @@ import Radium from 'radium';
 var TopNavItem = React.createClass({
   propTypes: {
     text: React.PropTypes.string.isRequired,
+    href: React.PropTypes.string.isRequired,
   },
 
   render () {
     return (
-      <a style={[styles.navBarItem]}>{this.props.text}</a>
+      <a href={this.props.href} style={[styles.navBarItem]}>{this.props.text}</a>
     );
   }
 });
@@ -27,6 +28,7 @@ var styles = {
     margin: '0 10px',
 
     cursor: 'pointer',
+    textDecoration: 'none',
 
     ':hover': {
 
