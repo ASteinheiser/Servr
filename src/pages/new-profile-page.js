@@ -1,7 +1,7 @@
 import React from 'react';
 
-import WaiterBackground from '../components/pageBackgrounds/waiter-background';
-import OpaqueBox from '../components/pageBackgrounds/opaque-box';
+import WaiterBackground from '../components/page-backgrounds/waiter-background';
+import OpaqueBox from '../components/page-backgrounds/opaque-box';
 import FormTitle from '../components/forms/form-title';
 import NewProfileForm from '../components/forms/new-profile-form';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import Radium from 'radium';
 
-import BlankBackground from '../parts/pageBackgrounds/blank-background';
-import TopNav from '../parts/navs/top-nav';
-import MiddleSection from '../parts/pageBackgrounds/middle-section';
+import BlankBackground from '../page-backgrounds/blank-background';
+import TopNav from '../navs/top-nav';
+import MiddleSection from '../page-backgrounds/middle-section';
 
 var LayoutShell = React.createClass({
   render () {
@@ -18,6 +18,7 @@ var LayoutShell = React.createClass({
         </MiddleSection>
 
       </BlankBackground>
+
     );
   }
 });
