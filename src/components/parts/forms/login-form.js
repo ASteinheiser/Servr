@@ -1,10 +1,10 @@
 import React from 'react';
 import Radium from 'radium';
 
-import FormField from '../parts/forms/form-field';
-import FormInput from '../parts/forms/form-input';
-import PrimaryButton from '../parts/buttons/primary-button';
-import SecondaryButton from '../parts/buttons/secondary-button';
+import FormField from './form-field';
+import FormInput from './form-input';
+import PrimaryButton from '../buttons/primary-button';
+import SecondaryButton from '../buttons/secondary-button';
 
 var LoginForm = React.createClass({
 
