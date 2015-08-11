@@ -7,7 +7,6 @@ import TopNavItem from './top-nav-item'
 var TopNav = React.createClass({
   render () {
     return (
-
       <div style={[styles.navTab]}>
 
         <NavTitle/>
@@ -27,7 +26,6 @@ var TopNav = React.createClass({
 TopNav = Radium(TopNav);
 
 var styles = {
-
   navTab: {
 
     backgroundColor: 'rgb(36, 41, 46)',

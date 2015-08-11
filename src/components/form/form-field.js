@@ -13,7 +13,6 @@ var FormField = React.createClass({
 FormField = Radium(FormField);
 
 var styles = {
-
   formField: {
 
     flexDirection: 'row',

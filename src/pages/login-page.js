@@ -8,7 +8,6 @@ import LoginForm from '../components/page-forms/login-form';
 var LoginPage = React.createClass({
   render () {
     return (
-
       <WaiterBackground>
         <OpaqueBox>
 
@@ -17,7 +16,6 @@ var LoginPage = React.createClass({
 
         </OpaqueBox>
       </WaiterBackground>
-
     );
   }
 });

@@ -4,7 +4,6 @@ import Radium from 'radium';
 var MiddleSecion = React.createClass({
   render () {
     return (
-
       <div style={[styles.middleSection]}>
         {this.props.children}
       </div>
@@ -15,7 +14,6 @@ var MiddleSecion = React.createClass({
 MiddleSecion = Radium(MiddleSecion);
 
 var styles = {
-
   middleSection: {
 
     flex: 1,

@@ -6,7 +6,6 @@ import BlankBackground from '../components/page-backgrounds/blank-background';
 var NotFoundPage = React.createClass({
   render () {
     return (
-
       <BlankBackground>
         <div style={[styles.notFoundText]}>
 
@@ -21,7 +20,6 @@ var NotFoundPage = React.createClass({
 NotFoundPage = Radium(NotFoundPage);
 
 var styles = {
-
   notFoundText: {
 
     fontSize: '50px',

@@ -4,7 +4,6 @@ import Radium from 'radium';
 var FormTitle = React.createClass({
   render () {
     return (
-
       <h1 style={[styles.servrTitle]}>
 
         <font>Serv</font>
@@ -18,7 +17,6 @@ var FormTitle = React.createClass({
 FormTitle = Radium(FormTitle);
 
 var styles = {
-
   servrTitle: {
 
     fontSize: '60px',

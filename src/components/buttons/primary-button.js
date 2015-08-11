@@ -2,7 +2,6 @@ import React from 'react';
 import Radium from 'radium';
 
 var PrimaryButton = React.createClass({
-
   propTypes: {
 
     type: React.PropTypes.string.isRequired,
@@ -12,7 +11,6 @@ var PrimaryButton = React.createClass({
 
   render () {
     return (
-
       <button style={[styles.primaryButton]} type={this.props.type} name={this.props.name}>
         {this.props.text}
       </button>
@@ -23,7 +21,6 @@ var PrimaryButton = React.createClass({
 PrimaryButton = Radium(PrimaryButton);
 
 var styles = {
-
   primaryButton: {
 
     fontSize: '22px',

@@ -4,7 +4,6 @@ import Radium from 'radium';
 var BlankBackground = React.createClass({
   render () {
     return (
-
       <div style={[styles.blankBackground]}>
         {this.props.children}
       </div>
@@ -15,7 +14,6 @@ var BlankBackground = React.createClass({
 BlankBackground = Radium(BlankBackground);
 
 var styles = {
-
   blankBackground: {
 
     display: 'flex',

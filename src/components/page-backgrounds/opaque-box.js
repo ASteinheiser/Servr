@@ -4,11 +4,9 @@ import Radium from 'radium';
 var OpaqueBox = React.createClass({
   render () {
     return (
-
       <div style={[styles.opaqueBox]}>
         {this.props.children}
       </div>
-
     );
   }
 });

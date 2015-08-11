@@ -6,7 +6,6 @@ import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
 var NewProfileForm = React.createClass({
-
   getInitialState: function() {
     return {
 
@@ -30,7 +29,6 @@ var NewProfileForm = React.createClass({
 
   render () {
     return (
-
       <div>
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
 

@@ -2,14 +2,12 @@ import React from 'react';
 import Radium from 'radium';
 
 var TopNavItem = React.createClass({
-
   propTypes: {
     text: React.PropTypes.string.isRequired,
   },
 
   render () {
     return (
-
       <a style={[styles.navBarItem]}>{this.props.text}</a>
     );
   }
@@ -18,7 +16,6 @@ var TopNavItem = React.createClass({
 TopNavItem = Radium(TopNavItem);
 
 var styles = {
-
   navBarItem: {
 
     fontSize: '16px',

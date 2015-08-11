@@ -8,7 +8,6 @@ import SignupForm from '../components/page-forms/signup-form';
 var SignupPage = React.createClass({
   render () {
     return (
-
       <WaiterBackground>
         <OpaqueBox>
 
@@ -18,7 +17,6 @@ var SignupPage = React.createClass({
 
         </OpaqueBox>
       </WaiterBackground>
-
     );
   }
 });

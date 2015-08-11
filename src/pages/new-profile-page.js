@@ -8,7 +8,6 @@ import NewProfileForm from '../components/page-forms/new-profile-form';
 var NewProfilePage = React.createClass({
   render () {
     return (
-
       <WaiterBackground>
         <OpaqueBox>
 
@@ -17,7 +16,6 @@ var NewProfilePage = React.createClass({
 
         </OpaqueBox>
       </WaiterBackground>
-
     );
   }
 });

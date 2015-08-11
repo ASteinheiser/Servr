@@ -1,5 +1,4 @@
 import React from 'react';
-import Radium from 'radium';
 
 import FormField from '../form/form-field';
 import FormInput from '../form/form-input';
@@ -7,7 +6,6 @@ import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
 var SignupForm = React.createClass({
-
   getInitialState: function() {
     return {
 
@@ -33,7 +31,6 @@ var SignupForm = React.createClass({
 
   render () {
     return (
-
       <div>
 
         <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
@@ -74,7 +71,5 @@ var SignupForm = React.createClass({
     );
   }
 });
-
-SignupForm = Radium(SignupForm);
 
 export default SignupForm;

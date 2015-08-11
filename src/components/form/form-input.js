@@ -2,7 +2,6 @@ import React from 'react';
 import Radium from 'radium';
 
 var FormInput = React.createClass({
-
   propTypes: {
 
     type: React.PropTypes.string.isRequired,
@@ -17,7 +16,6 @@ var FormInput = React.createClass({
 
   render () {
     return (
-
       <input
         style={[styles.inputStyle]}
         type={this.props.type}
@@ -30,7 +28,6 @@ var FormInput = React.createClass({
 FormInput = Radium(FormInput);
 
 var styles = {
-
   inputStyle: {
 
     fontSize: '24px',
