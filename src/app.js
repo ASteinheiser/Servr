@@ -6,6 +6,8 @@ import SignupRoute from './routes/signup';
 import NewProfileRoute from './routes/new-profile';
 import NotFoundRoute from './routes/not-found';
 import DashboardRoute from './routes/dashboard';
+import NotificationsRoute from './routes/notifications';
+import AccountRoute from './routes/account';
 
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
@@ -26,6 +28,8 @@ var routes = (
     <Route path='signup' handler={SignupRoute}/>
     <Route path='signup/profile' handler={NewProfileRoute}/>
     <Route path='dashboard' handler={DashboardRoute}/>
+    <Route path='notifications' handler={NotificationsRoute}/>
+    <Route path='account' handler={AccountRoute}/>
     <Route path='*' handler={NotFoundRoute}/>
   </Route>
 );
