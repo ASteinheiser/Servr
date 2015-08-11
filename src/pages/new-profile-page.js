@@ -2,8 +2,8 @@ import React from 'react';
 
 import WaiterBackground from '../components/page-backgrounds/waiter-background';
 import OpaqueBox from '../components/page-backgrounds/opaque-box';
-import FormTitle from '../components/forms/form-title';
-import NewProfileForm from '../components/forms/new-profile-form';
+import FormTitle from '../components/form/form-title';
+import NewProfileForm from '../components/page-forms/new-profile-form';
 
 var NewProfilePage = React.createClass({
   render () {

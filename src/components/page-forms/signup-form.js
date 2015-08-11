@@ -1,25 +1,26 @@
 import React from 'react';
 import Radium from 'radium';
 
-import FormField from './form-field';
-import FormInput from './form-input';
+import FormField from '../form/form-field';
+import FormInput from '../form/form-input';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
-var LoginForm = React.createClass({
+var SignupForm = React.createClass({
 
   getInitialState: function() {
     return {
 
       email: '',
-      password: ''
+      password: '',
+      confirmPassword: '',
     }
   },
 
   handleSubmit: function(e) {
 
-    e.preventDefault();
     console.log('Submitting ',this.state);
+    e.preventDefault();
   },
 
   handleChange: function (e) {
@@ -53,12 +54,20 @@ var LoginForm = React.createClass({
               value={this.state.password}/>
           </FormField>
 
-          <PrimaryButton name='loginButton' type='submit' text='Login'/>
+          <FormField>
+            <FormInput
+              name='confirmPassword'
+              type='password'
+              placeholder='Confirm Password'
+              value={this.state.password}/>
+          </FormField>
+
+          <PrimaryButton name='signupButton' type='submit' text='Sign up'/>
 
         </form>
 
-        <a href='/#/signup'>
-          <SecondaryButton name='signupButton' type='submit' text='Sign up'/>
+        <a href='/#/login'>
+          <SecondaryButton name='loginButton' type='submit' text='Login'/>
         </a>
 
       </div>
@@ -66,6 +75,6 @@ var LoginForm = React.createClass({
   }
 });
 
-LoginForm = Radium(LoginForm);
+SignupForm = Radium(SignupForm);
 
-export default LoginForm;
+export default SignupForm;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import FormField from './form-field';
-import FormInput from './form-input';
+import FormField from '../form/form-field';
+import FormInput from '../form/form-input';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 

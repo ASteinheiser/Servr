@@ -2,7 +2,7 @@ import React from 'react';
 import Radium from 'radium';
 
 import BlankBackground from '../page-backgrounds/blank-background';
-import TopNav from '../navs/top-nav';
+import TopNav from '../top-nav/top-nav';
 import MiddleSection from '../page-backgrounds/middle-section';
 
 var LayoutShell = React.createClass({

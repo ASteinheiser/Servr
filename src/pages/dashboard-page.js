@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LayoutShell from '../components/navigation-layout/layout-shell';
+import LayoutShell from '../components/layouts/basic-layout';
 
 var DashboardPage = React.createClass({
   render () {
