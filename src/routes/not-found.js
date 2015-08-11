@@ -1,5 +1,5 @@
 import React from 'react';
-import NotFoundPage from '../components/notFound/not-found-page';
+import NotFoundPage from '../pages/not-found-page';
 
 var NotFoundRoute = React.createClass({
   render () {

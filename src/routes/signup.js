@@ -1,5 +1,5 @@
 import React from 'react';
-import SignupPage from '../components/signup/signup-page';
+import SignupPage from '../pages/signup-page';
 
 var SignupRoute = React.createClass({
   render () {

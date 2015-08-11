@@ -1,9 +1,10 @@
 import React from 'react';
-import NewProfile from '../components/newProfile/new-profile-page';
+
+import NewProfilePage from '../pages/new-profile-page';
 
 var NewProfileRoute = React.createClass({
   render () {
-    return <NewProfile />;
+    return <NewProfilePage />;
   }
 });
 

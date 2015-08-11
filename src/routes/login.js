@@ -1,5 +1,6 @@
 import React from 'react';
-import LoginPage from '../components/login/login-page';
+
+import LoginPage from '../pages/login-page';
 
 var LoginRoute = React.createClass({
   render () {

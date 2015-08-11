@@ -1,7 +1,6 @@
 import React from 'react';
-import Radium from 'radium';
 
-import LayoutShell from '../navigationLayout/layout-shell';
+import LayoutShell from '../components/navigationLayout/layout-shell';
 
 var DashboardPage = React.createClass({
   render () {
@@ -13,7 +12,5 @@ var DashboardPage = React.createClass({
     );
   }
 });
-
-DashboardPage = Radium(DashboardPage);
 
 export default DashboardPage;

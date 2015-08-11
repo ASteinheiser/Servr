@@ -1,5 +1,6 @@
 import React from 'react';
-import DashboardPage from '../components/dashboard/dashboard-page';
+
+import DashboardPage from '../pages/dashboard-page';
 
 var DashboardRoute = React.createClass({
   render () {
