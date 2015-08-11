@@ -9,16 +9,13 @@ import LoginForm from './login-form';
 var LoginPage = React.createClass({
   render () {
     return (
-
       <WaiterBackground>
         <OpaqueBox>
-
-          <FormTitle />
-
-          <LoginForm />
-
+          <FormTitle/>
+          <LoginForm/>
         </OpaqueBox>
       </WaiterBackground>
+
     );
   }
 });

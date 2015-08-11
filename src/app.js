@@ -2,88 +2,22 @@ import React from 'react';
 import Radium from 'radium';
 import Router from 'react-router';
 
-import LoginPage from './components/login/login-page';
-import SignupPage from './components/signup/signup-page';
-import NewProfile from './components/newProfile/new-profile-page';
-import NotFoundPage from './components/notFound/not-found-page';
-import DashboardPage from './components/dashboard/dashboard-page';
+import LoginRoute from './routes/login';
+import SignupRoute from './routes/signup';
+import NewProfileRoute from './routes/new-profile';
+import NotFoundRoute from './routes/not-found';
+import DashboardRoute from './routes/dashboard';
 
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
 
 var App = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
   render () {
     return (
       <div>
         <RouteHandler />
       </div>
     )
-  }
-});
-
-var LoginRoute = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
-  render () {
-    return <LoginPage />;
-  }
-});
-
-var SignupRoute = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
-  render () {
-    return <SignupPage />;
-  }
-});
-
-var NewProfileRoute = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
-  render () {
-    return <NewProfile />;
-  }
-});
-
-var NotFoundRoute = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
-  render () {
-    return <NotFoundPage />;
-  }
-});
-
-var DashboardRoute = React.createClass({
-  componentDidMount: function () {
-    var id = this.props.params.id;
-    fetchMessage(id, function (err, message) {
-      this.setState({ message: message });
-    })
-  },
-  render () {
-    return <DashboardPage />;
   }
 });
 
