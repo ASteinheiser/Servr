@@ -1,31 +1,41 @@
 import React from 'react';
 import Radium from 'radium';
 
-var MiddleSecion = React.createClass({
+var MiddleSection = React.createClass({
   render () {
     return (
       <div style={[styles.middleSection]}>
-        {this.props.children}
+        <div style={[styles.noScrollbar]}>
+          {this.props.children}
+        </div>
       </div>
     );
   }
 });
 
-MiddleSecion = Radium(MiddleSecion);
+MiddleSection = Radium(MiddleSection);
 
 var styles = {
   middleSection: {
 
-    flex: 1,
     backgroundColor: 'rgb(240,240,240)',
     WebkitBoxShadow: '0px 0px 10px 0px rgba(0,0,0,0.75)',
 
     width: '100%',
-    margin: '0 auto',
+    height: '100%',
     maxWidth: '900px',
+    margin: '0 auto',
 
-    overflow: 'scroll',
+    overflow: 'hidden',
+  },
+  noScrollbar: {
+
+    width: '100%',
+    height: '100%',
+
+    overflow: 'auto',
+    paddingRight: '20px',
   }
 }
 
-export default MiddleSecion;
+export default MiddleSection;
