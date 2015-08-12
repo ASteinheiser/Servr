@@ -10,14 +10,19 @@ var RatingModule = React.createClass({
   render () {
     return (
 
-      <div style={[styles.ratingModuleStyle]}>
+      <div style={[styles.ratingModule]}>
 
-        <RatingForm />
+        <div style={[styles.firstPane]}>
+          <RatingForm />
 
-        <CommentBox />
+          <PrimaryButton name='rate' type='submit' text='Rate' />
+          <SecondaryButton name='cancel' type='submit' text='Cancel' />
+        </div>
 
-        <PrimaryButton />
-        <SecondaryButton />
+        <div style={[styles.secondPane]}>
+          <CommentBox />
+        </div>
+
       </div>
     );
   }
@@ -26,9 +31,19 @@ var RatingModule = React.createClass({
 RatingModule = Radium(RatingModule);
 
 var styles = {
-  ratingModuleStyle: {
+  ratingModule: {
+
+    display: 'flex',
 
     backgroundColor: 'red',
+  },
+  firstPane: {
+
+    width: '50%',
+  },
+  secondPane: {
+
+    width: '50%',
   }
 }
 
