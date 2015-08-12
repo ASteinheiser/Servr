@@ -18,7 +18,7 @@ var styles = {
 
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: 'rgb(210,210,210)',
+    backgroundColor: 'rgb(240,240,240)',
 
     backgroundSize: 'cover',
     position: 'absolute',
