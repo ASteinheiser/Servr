@@ -1,7 +1,7 @@
 import React from 'react';
 import Radium from 'radium';
 
-import BlankBackground from '../components/page-backgrounds/blank-background';
+import BlankBackground from '../components/backgrounds/blank-background';
 
 var NotFoundPage = React.createClass({
   render () {

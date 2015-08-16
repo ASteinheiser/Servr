@@ -2,10 +2,24 @@ import React from 'react';
 import Radium from 'radium';
 
 var CommentBox = React.createClass({
+  propTypes: {
+    name: React.PropTypes.string.isRequired,
+    placeholder: React.PropTypes.string
+  },
+
+  getDefaultProps () {
+    return {
+        placeholder: '',
+    };
+  },
+
   render () {
     return (
 
-      <input style={[styles.commentBox]} />
+      <textarea
+        name={this.props.name}
+        placeholder={this.props.placeholder}
+        style={[styles.commentBox]} />
     );
   }
 });
@@ -15,10 +29,17 @@ CommentBox = Radium(CommentBox);
 var styles = {
   commentBox: {
 
-    width: '96.5%',
-    height: '270px',
-    margin: '12px 0',
     display: 'flex',
+    height: '270px',
+    width: '96.5%',
+    margin: '12px 0',
+
+    fontSize: '18px',
+    fontWeight: 'lighter',
+    fontFamily: 'sans-serif',
+    WebkitFontSmoothing: 'antialiased',
+
+    outline: 'none',
   }
 }
 

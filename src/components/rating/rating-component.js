@@ -10,19 +10,26 @@ var RatingComponent = React.createClass({
   render () {
     return (
 
-      <div style={[styles.ratingComponent]}>
+      <div style={[styles.ratingComponentBackground]}>
 
         <div style={[styles.firstPane]}>
+
           <RatingForm />
 
           <div style={[styles.ratingComponentButtons]}>
             <PrimaryButton name='rate' type='submit' text='Rate' />
-            <SecondaryButton name='cancel' type='submit' text='Cancel' />
+
+            <a href='/#/dashboard'>
+              <SecondaryButton name='cancel' type='submit' text='Cancel' />
+            </a>
           </div>
+
         </div>
 
         <div style={[styles.secondPane]}>
-          <CommentBox />
+
+          <CommentBox name='rating comment' placeholder='Additional comments...' />
+
         </div>
 
       </div>
@@ -33,7 +40,7 @@ var RatingComponent = React.createClass({
 RatingComponent = Radium(RatingComponent);
 
 var styles = {
-  ratingComponent: {
+  ratingComponentBackground: {
 
     backgroundColor: 'rgb(36, 41, 46)',
     WebkitBoxShadow: '0px 2px 10px 0px rgba(0,0,0,0.75)',
