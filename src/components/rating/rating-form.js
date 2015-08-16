@@ -15,12 +15,24 @@ var RatingForm = React.createClass({
 
         <RatingHeader name='Service' text='Service'/>
         <RatingBody name='Service'/>
+        <RatingBody name='Service'/>
+        <RatingBody name='Service'/>
+        <RatingBody name='Service'/>
+        <RatingBody name='Service'/>
 
         <RatingHeader name='Quality' text='Quality'/>
         <RatingBody name='Quality'/>
+        <RatingBody name='Quality'/>
+        <RatingBody name='Quality'/>
+        <RatingBody name='Quality'/>
+        <RatingBody name='Quality'/>
 
-        <RatingHeader name='Fun' text='Fun'/>
-        <RatingBody name='Fun'/>
+        <RatingHeader name='Food' text='Food'/>
+        <RatingBody name='Food'/>
+        <RatingBody name='Food'/>
+        <RatingBody name='Food'/>
+        <RatingBody name='Food'/>
+        <RatingBody name='Food'/>
       </div>
     );
   }
@@ -31,7 +43,7 @@ RatingForm = Radium(RatingForm);
 var styles = {
   overallRatingStyle: {
 
-    backgroundColor: 'blue',
+    textAlign: 'center',
   }
 }
 

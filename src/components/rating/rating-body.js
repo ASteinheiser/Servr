@@ -2,12 +2,19 @@ import React from 'react';
 import Radium from 'radium';
 
 var RatingBody = React.createClass({
+  propTypes: {
+
+    name : React.PropTypes.string.isRequired,
+  },
+
   render () {
     return (
 
-      <div style={[styles.ratingBodyStyle]}>
-        Rating Body
-      </div>
+      <input
+        type='radio'
+        style={[styles.ratingBodyStyle]}
+        name={this.props.name}>
+      </input>
     );
   }
 });
@@ -17,7 +24,8 @@ RatingBody = Radium(RatingBody);
 var styles = {
   ratingBodyStyle: {
 
-    backgroundColor: 'green',
+    textAlign: 'center',
+    margin: '0px 20px',
   }
 }
 

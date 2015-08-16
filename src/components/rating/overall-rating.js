@@ -6,7 +6,7 @@ var OverallRating = React.createClass({
     return (
 
       <div style={[styles.overallRatingStyle]}>
-        Overall Rating!!!
+        icon 0.0
       </div>
     );
   }
@@ -17,9 +17,9 @@ OverallRating = Radium(OverallRating);
 var styles = {
   overallRatingStyle: {
 
-    backgroundColor: 'oldlace',
-    color: 'purple',
     fontSize: '30px',
+    color: 'rgb(215,215,215)',
+    textAlign: 'center',
   }
 }
 

@@ -5,9 +5,7 @@ var CommentBox = React.createClass({
   render () {
     return (
 
-      <div style={[styles.commentBoxStyle]}>
-        Comment Box is here!!
-      </div>
+      <input style={[styles.commentBoxStyle]} />
     );
   }
 });
@@ -17,7 +15,10 @@ CommentBox = Radium(CommentBox);
 var styles = {
   commentBoxStyle: {
 
-    backgroundColor: 'orange',
+    width: '91%',
+    height: '260px',
+    margin: '15px auto',
+    display: 'flex',
   }
 }
 

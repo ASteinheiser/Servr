@@ -15,8 +15,10 @@ var RatingModule = React.createClass({
         <div style={[styles.firstPane]}>
           <RatingForm />
 
-          <PrimaryButton name='rate' type='submit' text='Rate' />
-          <SecondaryButton name='cancel' type='submit' text='Cancel' />
+          <div style={[styles.ratingModuleButtons]}>
+            <PrimaryButton name='rate' type='submit' text='Rate' />
+            <SecondaryButton name='cancel' type='submit' text='Cancel' />
+          </div>
         </div>
 
         <div style={[styles.secondPane]}>
@@ -33,17 +35,31 @@ RatingModule = Radium(RatingModule);
 var styles = {
   ratingModule: {
 
-    display: 'flex',
+    backgroundColor: 'rgba(10, 10, 10, 0.9)',
+    WebkitBoxShadow: '0px 2px 10px 0px rgba(0,0,0,0.75)',
 
-    backgroundColor: 'red',
+    display: 'flex',
+    height: '300px',
+
+    borderRadius: '5px',
+    margin: '10px 5px',
+  },
+  ratingModuleButtons: {
+
+    width: '70%',
+    margin: '0px auto',
   },
   firstPane: {
 
-    width: '50%',
+    display: 'flex',
+    width: '45%',
+
+    justifyContent: 'center',
+    flexDirection: 'column',
   },
   secondPane: {
 
-    width: '50%',
+    width: '55%',
   }
 }
 
