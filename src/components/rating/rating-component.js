@@ -1,73 +1,30 @@
 import React from 'react';
-import Radium from 'radium';
 
+import RatingBox from '../backgrounds/rating-box';
+import RatingPane from './rating-pane';
 import RatingForm from './rating-form';
+import CommentPane from '../comment/comment-pane';
 import CommentBox from '../comment/comment-box';
-import PrimaryButton from '../buttons/primary-button';
-import SecondaryButton from '../buttons/secondary-button';
 
 var RatingComponent = React.createClass({
   render () {
     return (
 
-      <div style={[styles.ratingComponentBackground]}>
+      <RatingBox>
 
-        <div style={[styles.firstPane]}>
-
+        <RatingPane>
           <RatingForm />
+        </RatingPane>
 
-          <div style={[styles.ratingComponentButtons]}>
-            <PrimaryButton name='rate' type='submit' text='Rate' />
+        <CommentPane>
+          <CommentBox
+            name='rating comment'
+            placeholder='Additional comments...' />
+        </CommentPane>
 
-            <a href='/#/dashboard'>
-              <SecondaryButton name='cancel' type='submit' text='Cancel' />
-            </a>
-          </div>
-
-        </div>
-
-        <div style={[styles.secondPane]}>
-
-          <CommentBox name='rating comment' placeholder='Additional comments...' />
-
-        </div>
-
-      </div>
+      </RatingBox>
     );
   }
 });
-
-RatingComponent = Radium(RatingComponent);
-
-var styles = {
-  ratingComponentBackground: {
-
-    backgroundColor: 'rgb(36, 41, 46)',
-    WebkitBoxShadow: '0px 2px 10px 0px rgba(0,0,0,0.75)',
-
-    display: 'flex',
-    height: '300px',
-
-    borderRadius: '5px',
-    margin: '10px 5px',
-  },
-  ratingComponentButtons: {
-
-    width: '90%',
-    margin: '10px auto 0px auto',
-  },
-  firstPane: {
-
-    display: 'flex',
-    width: '40%',
-
-    justifyContent: 'center',
-    flexDirection: 'column',
-  },
-  secondPane: {
-
-    width: '60%',
-  }
-}
 
 export default RatingComponent;

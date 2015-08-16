@@ -4,6 +4,8 @@ import Radium from 'radium';
 import OverallRating from './overall-rating';
 import RatingHeader from './rating-header';
 import RatingBody from './rating-body';
+import PrimaryButton from '../buttons/primary-button';
+import SecondaryButton from '../buttons/secondary-button';
 
 var RatingForm = React.createClass({
   render () {
@@ -33,6 +35,17 @@ var RatingForm = React.createClass({
         <RatingBody name='Food' value='3'/>
         <RatingBody name='Food' value='4'/>
         <RatingBody name='Food' value='5'/>
+
+        <div style={[styles.ratingComponentButtons]}>
+
+          <PrimaryButton name='rate' type='submit' text='Rate' />
+
+          <a href='/#/dashboard'>
+            <SecondaryButton name='cancel' type='submit' text='Cancel' />
+          </a>
+
+        </div>
+
       </div>
     );
   }
@@ -44,6 +57,11 @@ var styles = {
   ratingForm: {
 
     textAlign: 'center',
+  },
+  ratingComponentButtons: {
+
+    width: '90%',
+    margin: '10px auto 0px auto',
   }
 }
 
