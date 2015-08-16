@@ -9,7 +9,7 @@ var RatingForm = React.createClass({
   render () {
     return (
 
-      <div style={[styles.ratingFormStyle]}>
+      <div style={[styles.ratingForm]}>
 
         <OverallRating/>
 
@@ -41,7 +41,7 @@ var RatingForm = React.createClass({
 RatingForm = Radium(RatingForm);
 
 var styles = {
-  ratingFormStyle: {
+  ratingForm: {
 
     textAlign: 'center',
   }

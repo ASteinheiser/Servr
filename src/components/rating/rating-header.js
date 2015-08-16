@@ -12,7 +12,7 @@ var RatingHeader = React.createClass({
     return (
 
       <div
-        style={[styles.ratingHeaderStyle]}
+        style={[styles.ratingHeader]}
         name={this.props.name}>
         {this.props.text}
       </div>
@@ -23,7 +23,7 @@ var RatingHeader = React.createClass({
 RatingHeader = Radium(RatingHeader);
 
 var styles = {
-  ratingHeaderStyle: {
+  ratingHeader: {
 
     fontSize: '18px',
     fontFamily: 'sans-serif',

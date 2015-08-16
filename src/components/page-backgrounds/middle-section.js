@@ -5,7 +5,7 @@ var MiddleSection = React.createClass({
   render () {
     return (
       <div style={[styles.middleSection]}>
-        <div style={[styles.noScrollbar]}>
+        <div style={[styles.hiddenScrollbar]}>
           {this.props.children}
         </div>
       </div>
@@ -28,7 +28,7 @@ var styles = {
 
     overflow: 'hidden',
   },
-  noScrollbar: {
+  hiddenScrollbar: {
 
     width: '100%',
     height: '100%',

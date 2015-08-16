@@ -13,7 +13,7 @@ var RatingBody = React.createClass({
 
       <input
         type='radio'
-        style={[styles.ratingBodyStyle]}
+        style={[styles.ratingBody]}
         name={this.props.name}
         value={this.props.value}/>
     );
@@ -23,7 +23,7 @@ var RatingBody = React.createClass({
 RatingBody = Radium(RatingBody);
 
 var styles = {
-  ratingBodyStyle: {
+  ratingBody: {
 
     textAlign: 'center',
     margin: '0px 20px',

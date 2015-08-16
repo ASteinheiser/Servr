@@ -6,16 +6,16 @@ import CommentBox from '../comment/comment-box';
 import PrimaryButton from '../buttons/primary-button';
 import SecondaryButton from '../buttons/secondary-button';
 
-var RatingModule = React.createClass({
+var RatingComponent = React.createClass({
   render () {
     return (
 
-      <div style={[styles.ratingModule]}>
+      <div style={[styles.ratingComponent]}>
 
         <div style={[styles.firstPane]}>
           <RatingForm />
 
-          <div style={[styles.ratingModuleButtons]}>
+          <div style={[styles.ratingComponentButtons]}>
             <PrimaryButton name='rate' type='submit' text='Rate' />
             <SecondaryButton name='cancel' type='submit' text='Cancel' />
           </div>
@@ -30,10 +30,10 @@ var RatingModule = React.createClass({
   }
 });
 
-RatingModule = Radium(RatingModule);
+RatingComponent = Radium(RatingComponent);
 
 var styles = {
-  ratingModule: {
+  ratingComponent: {
 
     backgroundColor: 'rgb(36, 41, 46)',
     WebkitBoxShadow: '0px 2px 10px 0px rgba(0,0,0,0.75)',
@@ -44,7 +44,7 @@ var styles = {
     borderRadius: '5px',
     margin: '10px 5px',
   },
-  ratingModuleButtons: {
+  ratingComponentButtons: {
 
     width: '90%',
     margin: '10px auto 0px auto',
@@ -63,4 +63,4 @@ var styles = {
   }
 }
 
-export default RatingModule;
+export default RatingComponent;

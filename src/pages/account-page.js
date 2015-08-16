@@ -1,13 +1,13 @@
 import React from 'react';
 
 import LayoutShell from '../components/layouts/basic-layout';
-import RatingModule from '../components/rating/rating-module';
+import RatingComponent from '../components/rating/rating-component';
 
 var AccountPage = React.createClass({
   render () {
     return (
       <LayoutShell>
-        <RatingModule/>
+        <RatingComponent/>
       </LayoutShell>
     );
   }

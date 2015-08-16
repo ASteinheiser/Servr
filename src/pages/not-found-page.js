@@ -7,7 +7,7 @@ var NotFoundPage = React.createClass({
   render () {
     return (
       <BlankBackground>
-        <div style={[styles.notFoundText]}>
+        <div style={[styles.centerText]}>
 
           <font>Page Not Found</font>
 
@@ -20,7 +20,7 @@ var NotFoundPage = React.createClass({
 NotFoundPage = Radium(NotFoundPage);
 
 var styles = {
-  notFoundText: {
+  centerText: {
 
     fontSize: '50px',
     fontFamily: 'sans-serif',

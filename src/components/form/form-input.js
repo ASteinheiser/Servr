@@ -17,7 +17,7 @@ var FormInput = React.createClass({
   render () {
     return (
       <input
-        style={[styles.inputStyle]}
+        style={[styles.inputField]}
         type={this.props.type}
         placeholder={this.props.placeholder}
         name={this.props.name}/>
@@ -28,7 +28,7 @@ var FormInput = React.createClass({
 FormInput = Radium(FormInput);
 
 var styles = {
-  inputStyle: {
+  inputField: {
 
     fontSize: '24px',
     fontWeight: 'lighter',

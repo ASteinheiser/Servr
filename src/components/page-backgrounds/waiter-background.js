@@ -4,7 +4,7 @@ import Radium from 'radium';
 var WaiterBackground = React.createClass({
   render () {
     return (
-      <div style={[styles.signupBackground]}>
+      <div style={[styles.waiterBackground]}>
         {this.props.children}
       </div>
     );
@@ -14,7 +14,7 @@ var WaiterBackground = React.createClass({
 WaiterBackground = Radium(WaiterBackground);
 
 var styles = {
-  signupBackground: {
+  waiterBackground: {
 
     display: 'flex',
     backgroundImage: 'url(src/images/waiter.jpg)',
