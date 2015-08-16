@@ -35,7 +35,7 @@ RatingModule = Radium(RatingModule);
 var styles = {
   ratingModule: {
 
-    backgroundColor: 'rgba(10, 10, 10, 0.9)',
+    backgroundColor: 'rgb(36, 41, 46)',
     WebkitBoxShadow: '0px 2px 10px 0px rgba(0,0,0,0.75)',
 
     display: 'flex',
@@ -46,20 +46,20 @@ var styles = {
   },
   ratingModuleButtons: {
 
-    width: '70%',
-    margin: '0px auto',
+    width: '90%',
+    margin: '10px auto 0px auto',
   },
   firstPane: {
 
     display: 'flex',
-    width: '45%',
+    width: '40%',
 
     justifyContent: 'center',
     flexDirection: 'column',
   },
   secondPane: {
 
-    width: '55%',
+    width: '60%',
   }
 }
 

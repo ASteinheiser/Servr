@@ -6,7 +6,7 @@ var OverallRating = React.createClass({
     return (
 
       <div style={[styles.overallRatingStyle]}>
-        icon 0.0
+        Total 0.0
       </div>
     );
   }
@@ -19,7 +19,9 @@ var styles = {
 
     fontSize: '30px',
     color: 'rgb(215,215,215)',
+
     textAlign: 'center',
+    marginBottom: '10px',
   }
 }
 

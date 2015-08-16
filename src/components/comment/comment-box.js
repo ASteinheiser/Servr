@@ -15,9 +15,9 @@ CommentBox = Radium(CommentBox);
 var styles = {
   commentBoxStyle: {
 
-    width: '91%',
-    height: '260px',
-    margin: '15px auto',
+    width: '96.5%',
+    height: '270px',
+    margin: '12px 0',
     display: 'flex',
   }
 }

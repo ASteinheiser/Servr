@@ -27,7 +27,7 @@ var styles = {
 
     fontSize: '18px',
     fontFamily: 'sans-serif',
-    fontWeight: 'bold',
+    fontWeight: 'normal',
     WebkitFontSmoothing: 'antialiased',
 
     color: 'rgb(215, 215, 215)',
